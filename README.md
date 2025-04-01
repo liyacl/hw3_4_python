@@ -109,8 +109,18 @@ curl -X 'DELETE' \
   -H 'accept: application/json' \
   -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6IjEyMyIsImVudiI6bnVsbCwidXNlciI6MiwiZXhwIjoxNzQzNjM3MDAyfQ.bV0KNNB16yaG-geVJksnvAQN1raVQ1NW-n_2qIOHqj8'
 
-# Инструкция по запуску
+![photo_2025-04-01_23-38-32](https://github.com/user-attachments/assets/d8be75d3-1906-4627-bef4-15f527553d08)
+curl -X 'GET' \
+  'http://0.0.0.0:8007/links/string/stats' \
+  -H 'accept: application/json'
 
+# Инструкция по запуску
+1) install python 3.7+ 
+2) pip install -r requierements.txt
+3) python 3.11 main.py
+4) create log file and add path to it example: ./logs/main.log
+5) create file .env and add variables from .env.example
+6) apply alembic upgrade head to new data base to apply migrations
 
 # Описание БД
 ![photo_2025-04-01_23-34-24](https://github.com/user-attachments/assets/fba9f7a7-bf94-4637-a3a7-5baf697333d5)
